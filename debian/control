@@ -24,5 +24,9 @@ Depends: ruby | ruby-interpreter,
          ruby-timfel-krb5-auth (>= 0.8),
          ${misc:Depends},
          ${shlibs:Depends}
-Description: An OmniAuth strategy for Kerberos.
- An OmniAuth strategy for Kerberos.
+Description: OmniAuth strategy for Kerberos
+ This gem provides an OmniAuth strategy for Kerberos. Kerberos is a computer 
+ network authentication protocol which works on the basis of 'tickets' to allow
+ nodes communicating over a non-secure network to prove their identity to one 
+ another in a secure manner. OmniAuth is a library that standardizes 
+ multi-provider authentication for web applications
