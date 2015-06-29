@@ -1,0 +1,28 @@
+Source: ruby-omniauth-kerberos
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Balasankar C <balasankarc@autistici.org>
+Build-Depends: debhelper (>= 7.0.50~),
+               gem2deb,
+               rake,
+               ruby-omniauth-multipassword,
+               ruby-rspec,
+               ruby-timfel-krb5-auth (>= 0.8)
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-omniauth-kerberos.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-omniauth-kerberos.git
+Homepage: https://github.com/jgraichen/omniauth-kerberos
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-omniauth-kerberos
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-omniauth-multipassword,
+         ruby-timfel-krb5-auth (>= 0.8),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: An OmniAuth strategy for Kerberos.
+ An OmniAuth strategy for Kerberos.
